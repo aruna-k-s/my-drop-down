@@ -1,0 +1,8 @@
+<div class="custom-dropdown">
+  <div class="selected-option" (click)="toggleDropdown()">{{ value || placeholder }}
+      <span class="dropdown-icon " [ngClass]="{rotate: isDropdownOpen}"></span>
+  </div>
+  <ul class="dropdown-list" *ngIf="isDropdownOpen">
+      <li *ngFor="let option of options" (click)="onOptionSelected(option)">{{ option }}</li>
+  </ul>
+</div>
