@@ -1,5 +1,7 @@
 .custom-dropdown {
   position: relative;
+  width: 100%;
+  min-width: 250px;
 }
 
 .selected-option {
@@ -9,14 +11,15 @@
   border-radius: 8px;
   background-color: #fff;
   display: flex;
+  padding: 5px 10px;
 }
 
 .dropdown-list {
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 0 5px 0 0;
   border: 1px solid rgb(0 14 41 / 10%) cc;
-  box-shadow: 4px 1px 2px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 0px 4px 1px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   background-color: #fff;
   max-height: 200px;
@@ -26,7 +29,6 @@
 
 .scrollable-menu {
   overflow-y: scroll;
-  /* Enable scrolling when the options exceed the maximum height */
 }
 
 .dropdown-icon {
@@ -42,4 +44,24 @@
 
 .rotate {
   transform: rotate(180deg);
+}
+.dropdown-onhover {
+  text-align: left;
+  padding: 5px 10px;
+}
+.dropdown-onhover:hover {
+  background-color: rgba(158, 221, 255, 0.2);
+}
+.dropdown-list::-webkit-scrollbar {
+  width: 2px;
+}
+
+.dropdown-list::-webkit-scrollbar-track {
+  margin-right: 5px;
+  -webkit-box-shadow: inset 0 0 3px rgb(116 102 255 / 29%);
+}
+
+.dropdown-list::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.3);
+  outline: 1px solid slategrey;
 }
