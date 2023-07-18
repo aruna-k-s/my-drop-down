@@ -3,6 +3,7 @@
       <span class="dropdown-icon " [ngClass]="{rotate: isDropdownOpen}"></span>
   </div>
   <ul class="dropdown-list" *ngIf="isDropdownOpen">
-      <li *ngFor="let option of options" (click)="onOptionSelected(option)">{{ option }}</li>
+      <li *ngFor="let option of options" class="dropdown-onhover" (click)="onOptionSelected(option)">{{ option }}</li>
   </ul>
 </div>
+
